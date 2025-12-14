@@ -1,0 +1,13 @@
+{
+  "name": "ci-lab-node",
+  "version": "1.0.0",
+  "description": "Simple Node.js project for CI lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
