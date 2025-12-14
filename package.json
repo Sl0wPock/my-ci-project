@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "lint:docs": "markdownlint DOCS.md",
     "start": "node index.js"
   },
   "devDependencies": {
     "jest": "^29.7.0"
+    "markdownlint-cli": "^0.39.0"
   }
 }
