@@ -1,6 +1,6 @@
 {
   "name": "ci-lab-node",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple Node.js project for CI lab",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "start": "node index.js"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
     "markdownlint-cli": "^0.39.0"
   }
 }
