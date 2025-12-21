@@ -9,10 +9,5 @@
     "recurse": true,
     "readme": "./README.md",
     "template": "./node_modules/docdash"
-  },
-  "templates": {
-    "default": {
-      "outputSourceFiles": true
-    }
   }
 }
