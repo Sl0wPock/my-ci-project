@@ -30,3 +30,20 @@ jobs:
     # Шаг 5: Запуск тестов
       - name: Run tests
         run: npm test
+    # Шаг 6: Генерация документации
+      - name: Generate documentation
+        run: npm run docs
+    # Шаг 7: Коммитирование документации
+      - name: Commit and push generated docs
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/development')
+        run: |
+          # Проверяем, есть ли изменения в документации
+          if [[ $(git status --porcelain docs/) ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add docs/
+            git commit -m "docs: auto-generated documentation [skip ci]"
+            git push
+          else
+            echo "No changes in documentation"
+          fi
