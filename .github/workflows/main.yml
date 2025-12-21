@@ -37,7 +37,9 @@ jobs:
         run: npm test
 
       - name: Generate documentation
-        run: npm run docs
+        run: |
+          rm -rf docs/
+          npm run docs
 
       - name: Commit and push generated docs
         if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/development')
