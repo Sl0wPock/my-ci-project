@@ -6,4 +6,8 @@ function getVersion() {
   return '1.1.0';
 }
 
-module.exports = { init, getVersion };
+function add(a, b) {
+  return a + b;
+}
+
+module.exports = { init, getVersion, add };
