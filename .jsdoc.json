@@ -1,13 +1,11 @@
 {
   "source": {
     "include": ["src"],
-    "includePattern": ".+\\.js$",
-    "excludePattern": "(^|\\/|\\\\)_"
+    "includePattern": ".+\\.js$"
   },
   "opts": {
     "destination": "./docs",
     "recurse": true,
-    "readme": "./README.md",
-    "template": "./node_modules/docdash"
+    "readme": "./README.md"
   }
 }
