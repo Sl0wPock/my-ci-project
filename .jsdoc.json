@@ -6,15 +6,6 @@
   },
   "opts": {
     "destination": "./docs",
-    "recurse": true,
-    "readme": "./README.md",
-    "template": "./node_modules/better-docs"
-  },
-  "templates": {
-    "cleverLinks": false,
-    "monospaceLinks": false,
-    "default": {
-      "outputSourceFiles": true
-    }
+    "recurse": true
   }
 }
