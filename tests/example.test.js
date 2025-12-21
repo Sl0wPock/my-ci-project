@@ -1,4 +1,4 @@
-const { init, getVersion } = require('../src/index');
+const { init, getVersion, add } = require('../src/index');
 
 describe('Application Tests', () => {
   test('should initialize without errors', () => {
@@ -11,5 +11,13 @@ describe('Application Tests', () => {
 
   test('should return a string', () => {
     expect(typeof getVersion()).toBe('string');
+  });
+
+  test('should add two numbers', () => {
+    expect(add(2, 3)).toBe(5);
+  });
+
+  test('should add negative numbers', () => {
+    expect(add(-2, 3)).toBe(1);
   });
 });
