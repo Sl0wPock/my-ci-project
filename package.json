@@ -12,13 +12,7 @@
     "docs:watch": "nodemon --watch src --exec 'npm run docs'",
     "start": "node src/index.js"
   },
-  "keywords": [
-    "ci",
-    "cd",
-    "testing",
-    "documentation",
-    "automation"
-  ],
+  "keywords": ["ci", "cd", "testing", "documentation", "automation"],
   "author": "Sl0wPock",
   "license": "MIT",
   "devDependencies": {
@@ -32,4 +26,3 @@
     "npm": ">=10.0.0"
   }
 }
-
