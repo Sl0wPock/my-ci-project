@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "jsdoc": "^4.0.2",
-    "docdash": "^1.2.0"
+    "jsdoc": "^4.0.2"
   }
 }
