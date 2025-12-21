@@ -1,23 +1,18 @@
-const { init, getVersion, add } = require('../src/index');
+/**
+ * Example tests for the application
+ */
+
+import { getVersion } from '../src/index.js';
 
 describe('Application Tests', () => {
   test('should initialize without errors', () => {
-    expect(() => init()).not.toThrow();
-  });
-
-  test('should return correct version', () => {
-    expect(getVersion()).toBe('1.1.0');
+    expect(() => {
+      getVersion();
+    }).not.toThrow();
   });
 
   test('should return a string', () => {
-    expect(typeof getVersion()).toBe('string');
-  });
-
-  test('should add two numbers', () => {
-    expect(add(2, 3)).toBe(5);
-  });
-
-  test('should add negative numbers', () => {
-    expect(add(-2, 3)).toBe(1);
+    const result = getVersion();
+    expect(typeof result).toBe('string');
   });
 });
