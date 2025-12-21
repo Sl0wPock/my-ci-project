@@ -9,9 +9,9 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "jsdoc": "^4.0.2"
+    "jsdoc": "^4.0.2",
+    "babel-jest": "^29.7.0",
     "@babel/core": "^7.23.0",
-    "@babel/preset-env": "^7.23.0",
-    "babel-jest": "^29.7.0"
+    "@babel/preset-env": "^7.23.0"
   }
 }
